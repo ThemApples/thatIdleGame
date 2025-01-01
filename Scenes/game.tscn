@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwj86rmrfepxw"]
+
+[ext_resource type="PackedScene" uid="uid://c1wgsatp7drjx" path="res://Scenes/main_character.tscn" id="1_jyoe1"]
+[ext_resource type="PackedScene" uid="uid://budrnpc281sfl" path="res://Scenes/EasyLevelSlime.tscn" id="2_c8s5k"]
+
+[node name="Game" type="Node2D"]
+
+[node name="MainCharacter" parent="." instance=ExtResource("1_jyoe1")]
+position = Vector2(60, 39)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(106, 28)
+zoom = Vector2(4, 4)
+
+[node name="Node2D" parent="." instance=ExtResource("2_c8s5k")]
+position = Vector2(129, 37)
